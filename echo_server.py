@@ -11,6 +11,7 @@ s.listen(2)
 
 while True:
     conn, addr = s.accept()
+    print("Connected by", addr)
     
     full_data = conn.recv(buffer_size)
     conn.sendall(full_data)
