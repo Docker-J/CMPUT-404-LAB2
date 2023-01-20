@@ -15,5 +15,3 @@ while True:
     full_data = conn.recv(buffer_size)
     conn.sendall(full_data)
     conn.close()
-
-s.close()
